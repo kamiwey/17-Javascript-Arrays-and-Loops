@@ -4,6 +4,11 @@ let hello = [];
 for(let index = 0; index < myArray.length; index++){
     let element = myArray[index];
     // MAGIC HAPPENS HERE
+    if (typeof myArray[index] === "object"){
+        hello.push(element);
+    }
 }
 
-console.log(hello)
+console.log(hello);
+
+// me costo la vida averiguar como incluir el typeof en el if para que me diese lo que queria

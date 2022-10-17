@@ -2,4 +2,14 @@ let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','L
 
 //declare your function here
 
-console.log(filterByName(names, 'am'));
+
+let filterByName = names.filter(function(array){
+    let minusculas = array.toLowerCase();
+
+    return minusculas.includes ("am");
+})
+console.log(filterByName)
+
+//console.log(filterByName(names, 'am'));
+
+
